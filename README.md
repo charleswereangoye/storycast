@@ -1,5 +1,4 @@
-# StoryCast
-# Accessible Media Feature Microsite
+# StoryCast: Accessible Media Feature Microsite
 
 StoryCast is a clean, accessible, 3-page web microsite built to showcase audio and video storytelling. The goal of this project is to make media content welcoming, easy to navigate, and fully accessible to everyone, including people using assistive technologies like screen readers or keyboard-only navigation.
 
