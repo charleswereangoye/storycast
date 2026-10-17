@@ -898,11 +898,17 @@ button {
 .about-main {
   margin: 0 auto;
   max-width: 1056px;
-  padding: 48px 24px 128px;
+  padding: 40px 20px 64px;
 }
 @media (min-width: 768px) {
   .about-main {
-    padding: 80px 64px 128px;
+    padding: 48px 32px 80px;
+  }
+}
+@media (min-width: 1120px) {
+  .about-main {
+    padding: 64px 0 96px;
+    width: 1056px;
   }
 }
 
@@ -995,6 +1001,12 @@ button {
   }
 }
 
+.standards-divider {
+  background-color: #f3f4f6;
+  flex: 1;
+  height: 1.5px;
+}
+
 .standards-list {
   display: flex;
   flex-direction: column;
@@ -1005,12 +1017,12 @@ button {
   align-items: center;
   background-color: #ffffff;
   border: 1px solid #f3f4f6;
-  border-radius: 8px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  border-radius: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
   display: flex;
   justify-content: space-between;
-  padding: 24px;
-  transition: box-shadow 0.2s ease;
+  padding: 18px 20px;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 @media (min-width: 768px) {
   .access-card {
@@ -1018,13 +1030,14 @@ button {
   }
 }
 .access-card:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transform: translateY(-1px);
 }
 
 .access-card__left {
   align-items: center;
   display: flex;
-  gap: 20px;
+  gap: 14px;
 }
 @media (min-width: 768px) {
   .access-card__left {
@@ -1034,20 +1047,31 @@ button {
 
 .access-card__icon-box {
   align-items: center;
-  background-color: #f4f7f9;
-  border-radius: 4px;
+  background-color: #f1f5f9;
+  border-radius: 50%;
   color: #1a1a1a;
   display: flex;
   flex-shrink: 0;
-  height: 48px;
+  height: 40px;
   justify-content: center;
-  width: 48px;
+  width: 40px;
+}
+@media (min-width: 768px) {
+  .access-card__icon-box {
+    height: 48px;
+    width: 48px;
+  }
 }
 
 .access-card__title {
   color: #1a1a1a;
-  font-size: 1.125rem;
+  font-size: 0.9375rem;
   font-weight: 700;
+}
+@media (min-width: 400px) {
+  .access-card__title {
+    font-size: 1rem;
+  }
 }
 @media (min-width: 768px) {
   .access-card__title {
@@ -1055,38 +1079,42 @@ button {
   }
 }
 
-.access-card__check {
-  color: #16a34a;
+.access-card__arrow {
   flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+.access-card:hover .access-card__arrow {
+  transform: translateX(3px);
 }
 
 /* Help banner */
 .help-banner {
   align-items: center;
   background-color: #fef9c3;
-  border: 1px solid #f9d423;
-  border-radius: 8px;
+  border: 1.5px solid #f9d423;
+  border-radius: 24px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 16px;
   padding: 40px 24px;
   text-align: center;
 }
 @media (min-width: 768px) {
   .help-banner {
-    gap: 24px;
-    padding: 64px 48px;
+    gap: 20px;
+    padding: 48px;
   }
 }
 
 .help-banner__icon {
   align-items: center;
   background-color: #f9d423;
-  border-radius: 9999px;
+  border-radius: 50%;
   color: #1a1a1a;
   display: flex;
   height: 64px;
   justify-content: center;
+  margin-bottom: 8px;
   width: 64px;
 }
 
@@ -1105,13 +1133,49 @@ button {
   color: #5c6b73;
   font-size: 1rem;
   line-height: 1.5;
+  margin: 0 auto 12px;
   max-width: 580px;
 }
 @media (min-width: 768px) {
   .help-banner__desc {
     font-size: 1.25rem;
     line-height: 1.5;
+    margin-bottom: 20px;
   }
+}
+
+.btn--access-team {
+  align-items: center;
+  background-color: #1a1a1a;
+  border: none;
+  border-radius: 12px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  gap: 12px;
+  justify-content: center;
+  padding: 14px 28px;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+@media (min-width: 768px) {
+  .btn--access-team {
+    font-size: 1.125rem;
+    padding: 16px 36px;
+  }
+}
+.btn--access-team:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+.btn--access-team:focus-visible {
+  outline: 2px solid #1a1a1a;
+  outline-offset: 4px;
+}
+.btn--access-team .btn__icon-right {
+  flex-shrink: 0;
 }
 
 /* Footer */
