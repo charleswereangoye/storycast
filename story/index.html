@@ -82,19 +82,22 @@
 
     <!-- Media player -->
     <section class="media-player-section" aria-label="Media Player">
-      <div class="player-preview-box" id="player-preview" role="button" tabindex="0" aria-label="Play video documentary for The Tide Between Us">
-        <button type="button" class="player-play-btn" id="main-play-btn" aria-label="Play video">
-          <svg width="27" height="32" viewBox="0 0 27 32" fill="none" aria-hidden="true" focusable="false">
-            <path d="M5.13281 0.496243C4.09219 -0.143601 2.78437 -0.164695 1.72266 0.432961C0.660937 1.03062 0 2.15562 0 3.37906V28.1291C0 29.3525 0.660937 30.4775 1.72266 31.0751C2.78437 31.6728 4.09219 31.6447 5.13281 31.0119L25.3828 18.6369C26.3883 18.0251 27 16.9353 27 15.7541C27 14.5728 26.3883 13.49 25.3828 12.8712L5.13281 0.496243Z" fill="#1A1A1A"/>
-          </svg>
-        </button>
-        <span class="player-placeholder-label">Video Player Placeholder</span>
-      </div>
-      <video controls preload="metadata" id="main-video" class="media-player-element" aria-label="Video documentary for The Tide Between Us" style="display: none;">
-        <source src="../assets/video/sample.mp4" type="video/mp4">
-        <track kind="captions" src="../assets/captions/tide-between-us.vtt" srclang="en" label="English Captions" default>
-        Your browser does not support the video element.
-      </video>
+      <figure class="media-player-figure">
+        <div class="player-preview-box" id="player-preview" role="button" tabindex="0" aria-label="Play video documentary for The Tide Between Us">
+          <button type="button" class="player-play-btn" id="main-play-btn" aria-label="Play video">
+            <svg width="27" height="32" viewBox="0 0 27 32" fill="none" aria-hidden="true" focusable="false">
+              <path d="M5.13281 0.496243C4.09219 -0.143601 2.78437 -0.164695 1.72266 0.432961C0.660937 1.03062 0 2.15562 0 3.37906V28.1291C0 29.3525 0.660937 30.4775 1.72266 31.0751C2.78437 31.6728 4.09219 31.6447 5.13281 31.0119L25.3828 18.6369C26.3883 18.0251 27 16.9353 27 15.7541C27 14.5728 26.3883 13.49 25.3828 12.8712L5.13281 0.496243Z" fill="#1A1A1A"/>
+            </svg>
+          </button>
+          <span class="player-placeholder-label">Video Player Placeholder</span>
+        </div>
+        <video controls preload="metadata" id="main-video" class="media-player-element" aria-label="Video documentary for The Tide Between Us" style="display: none;">
+          <source src="../assets/video/sample.mp4" type="video/mp4">
+          <track kind="captions" src="../assets/captions/tide-between-us.vtt" srclang="en" label="English Captions" default>
+          Your browser does not support the video element.
+        </video>
+        <figcaption class="visually-hidden">Video documentary: The Tide Between Us with captions and transcript.</figcaption>
+      </figure>
     </section>
 
     <!-- Transcript section -->
@@ -136,9 +139,12 @@
         <!-- Related story card 1 -->
         <article class="related-card">
           <div class="story-card__media-container">
-            <div class="story-card__placeholder" role="img" aria-label="Visual placeholder for Made By Hand">
-              <span>IMAGE PLACEHOLDER</span>
-            </div>
+            <figure class="story-card__figure">
+              <div class="story-card__placeholder" role="img" aria-label="Visual placeholder for Made By Hand">
+                <span>IMAGE PLACEHOLDER</span>
+              </div>
+              <figcaption class="visually-hidden">Preview image for Made By Hand</figcaption>
+            </figure>
             <video preload="none" class="visually-hidden" aria-label="Video for Made By Hand">
               <source src="../assets/video/sample.mp4" type="video/mp4">
               <track kind="captions" src="../assets/captions/made-by-hand.vtt" srclang="en" label="English Captions" default>
@@ -164,9 +170,12 @@
         <!-- Related story card 2 -->
         <article class="related-card">
           <div class="story-card__media-container">
-            <div class="story-card__placeholder" role="img" aria-label="Visual placeholder for After the Last Train">
-              <span>IMAGE PLACEHOLDER</span>
-            </div>
+            <figure class="story-card__figure">
+              <div class="story-card__placeholder" role="img" aria-label="Visual placeholder for After the Last Train">
+                <span>IMAGE PLACEHOLDER</span>
+              </div>
+              <figcaption class="visually-hidden">Preview image for After the Last Train</figcaption>
+            </figure>
             <audio preload="none" class="visually-hidden" aria-label="Audio for After the Last Train">
               <source src="../assets/audio/sample.mp3" type="audio/mpeg">
               <track kind="captions" src="../assets/captions/after-last-train.vtt" srclang="en" label="English Captions" default>
