@@ -6,14 +6,14 @@ This project was built from scratch using pure **Vanilla HTML5**, **Sass (SCSS)*
 
 ---
 
-## 🔗 Project Links & Design Artifacts
+## Project Links & Design Artifacts
 
 - **Figma Wireframes:** [StoryCast Wireframe](https://www.figma.com/design/jLhBC2z1o4UHmIzVNU9QyM/Story-Cast-Wireframe?m=auto&t=xumZIxgPNdn8F18n-1)
 - **Figma High-Fidelity Prototype:** [StoryCast Prototype](https://www.figma.com/design/FAiYkp5KRzOjN3LxzpStDP/Story-Cast-Protype?m=auto&t=xumZIxgPNdn8F18n-6)
 
 ---
 
-## 🗺️ Information Architecture & Sitemap
+## Information Architecture & Sitemap
 
 StoryCast consists of 3 core pages connected through a persistent navigation bar and clear breadcrumbs:
 
@@ -35,7 +35,7 @@ graph TD
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 The codebase is organized in a straightforward, modular layout:
 
@@ -79,7 +79,7 @@ storycast/
 
 ---
 
-## ♿ Accessibility Checklist (WCAG 2.1 AA Compliance)
+## Accessibility Checklist (WCAG 2.1 AA Compliance)
 
 Every requirement from the rubric has been implemented and tested:
 
@@ -103,7 +103,7 @@ Every requirement from the rubric has been implemented and tested:
 
 ---
 
-## 🎨 Sass & CSS Architecture
+## Sass & CSS Architecture
 
 The stylesheet architecture follows clean, maintainable best practices:
 
@@ -119,7 +119,7 @@ The stylesheet architecture follows clean, maintainable best practices:
 
 ---
 
-## 💻 Instructions for Running Locally
+## Instructions for Running Locally
 
 You do not need to install complex frameworks or build pipelines to run this project.
 
