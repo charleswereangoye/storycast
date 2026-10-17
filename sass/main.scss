@@ -228,6 +228,18 @@ button {
       border-color: $color-primary;
     }
   }
+
+  &--dark {
+    background-color: $color-primary;
+    color: $color-bg-white;
+    font-size: $font-size-lg;
+    gap: $space-sm;
+    padding: $space-md $space-3xl;
+
+    &:hover {
+      background-color: #333333;
+    }
+  }
 }
 
 .menu-toggle {
@@ -834,6 +846,215 @@ button {
 
   .btn--play {
     width: 100%;
+  }
+}
+
+/* About page */
+.about-main {
+  margin: 0 auto;
+  max-width: $container-max-cards;
+  padding: $space-4xl $space-xl $space-8xl;
+
+  @media (min-width: 768px) {
+    padding: $space-6xl $space-5xl $space-8xl;
+  }
+}
+
+.about-hero {
+  display: flex;
+  flex-direction: column;
+  gap: $space-2xl;
+  margin-bottom: $space-6xl;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $space-6xl;
+    align-items: start;
+  }
+}
+
+.about-hero__intro {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-hero__kicker {
+  color: $color-secondary;
+  font-size: $font-size-xs;
+  font-weight: $font-weight-bold;
+  letter-spacing: 0.08em;
+  margin-bottom: $space-md;
+  text-transform: uppercase;
+}
+
+.about-hero__title {
+  color: $color-primary;
+  font-size: $font-size-hero-mobile;
+  font-weight: $font-weight-black;
+  line-height: 1.15;
+
+  @media (min-width: 768px) {
+    font-size: 3.125rem;
+    line-height: 1.1;
+  }
+}
+
+.about-hero__lead {
+  color: $color-secondary;
+  font-size: $font-size-lg;
+  font-weight: $font-weight-medium;
+  line-height: $line-height-relaxed;
+
+  @media (min-width: 768px) {
+    font-size: 1.5rem;
+    line-height: 1.625;
+    padding-top: $space-3xl;
+  }
+}
+
+.about-media-box {
+  margin-bottom: $space-6xl;
+}
+
+/* Access standards */
+.standards-section {
+  margin-bottom: $space-6xl;
+}
+
+.standards-header {
+  align-items: center;
+  display: flex;
+  gap: $space-md;
+  margin-bottom: $space-3xl;
+
+  @media (min-width: 768px) {
+    gap: $space-xl;
+  }
+}
+
+.standards-title {
+  color: $color-primary;
+  font-size: $font-size-xl;
+  font-weight: $font-weight-bold;
+  white-space: nowrap;
+
+  @media (min-width: 768px) {
+    font-size: $font-size-3xl;
+  }
+}
+
+.standards-list {
+  display: flex;
+  flex-direction: column;
+  gap: $space-md;
+}
+
+.access-card {
+  align-items: center;
+  background-color: $color-bg-white;
+  border: 1px solid $color-border-card;
+  border-radius: $border-radius-md;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  display: flex;
+  justify-content: space-between;
+  padding: $space-xl;
+  transition: box-shadow 0.2s ease;
+
+  @media (min-width: 768px) {
+    padding: $space-2xl;
+  }
+
+  &:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+}
+
+.access-card__left {
+  align-items: center;
+  display: flex;
+  gap: $space-lg;
+
+  @media (min-width: 768px) {
+    gap: $space-xl;
+  }
+}
+
+.access-card__icon-box {
+  align-items: center;
+  background-color: $color-bg-page;
+  border-radius: $border-radius-sm;
+  color: $color-primary;
+  display: flex;
+  flex-shrink: 0;
+  height: 48px;
+  justify-content: center;
+  width: 48px;
+}
+
+.access-card__title {
+  color: $color-primary;
+  font-size: $font-size-lg;
+  font-weight: $font-weight-bold;
+
+  @media (min-width: 768px) {
+    font-size: $font-size-2xl;
+  }
+}
+
+.access-card__check {
+  color: $color-success;
+  flex-shrink: 0;
+}
+
+/* Help banner */
+.help-banner {
+  align-items: center;
+  background-color: #fef9c3;
+  border: 1px solid $color-accent;
+  border-radius: $border-radius-md;
+  display: flex;
+  flex-direction: column;
+  gap: $space-lg;
+  padding: $space-3xl $space-xl;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    gap: $space-xl;
+    padding: $space-5xl $space-4xl;
+  }
+}
+
+.help-banner__icon {
+  align-items: center;
+  background-color: $color-accent;
+  border-radius: $border-radius-full;
+  color: $color-primary;
+  display: flex;
+  height: 64px;
+  justify-content: center;
+  width: 64px;
+}
+
+.help-banner__title {
+  color: $color-primary;
+  font-size: $font-size-2xl;
+  font-weight: $font-weight-bold;
+
+  @media (min-width: 768px) {
+    font-size: $font-size-3xl;
+  }
+}
+
+.help-banner__desc {
+  color: $color-secondary;
+  font-size: $font-size-md;
+  line-height: $line-height-normal;
+  max-width: 580px;
+
+  @media (min-width: 768px) {
+    font-size: $font-size-xl;
+    line-height: 1.5;
   }
 }
 
