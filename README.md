@@ -159,11 +159,3 @@ Or watch for changes in real time:
 ```bash
 npx -y sass --watch sass/main.scss:css/main.css
 ```
-
----
-
-## 📝 Author & Submission Info
-- **Project:** StoryCast — Accessible Media Feature Microsite
-- **Course:** Advanced Web Development / Human-Computer Interaction
-- **Submission Date:** October 17, 2026
-- **License:** MIT License (or Educational Use)
