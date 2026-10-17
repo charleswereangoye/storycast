@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StoryCast — Stories That Make Room for Every Voice</title>
+  <meta name="description" content="StoryCast brings human stories to the surface through thoughtful, accessible audio and video documentaries with captions and transcripts.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <!-- Skip to main content -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <div class="header-brand-group">
+        <a href="index.html" class="brand-logo" aria-label="StoryCast home">
+          <span class="logo-badge" aria-hidden="true">
+            <svg width="12" height="16" viewBox="0 0 10 14" fill="none" focusable="false">
+              <path d="M0 0L10 7L0 14V0Z" fill="#f9d423"/>
+            </svg>
+          </span>
+          <span>StoryCast</span>
+        </a>
+
+        <nav class="primary-nav" aria-label="Main Navigation">
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-link nav-link--active" aria-current="page">Home</a></li>
+            <li><a href="story/index.html" class="nav-link">Stories</a></li>
+            <li><a href="about.html" class="nav-link">About & Access</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="header-actions">
+        <button type="button" class="btn btn--primary btn--subscribe">SUBSCRIBE</button>
+        <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Toggle navigation menu">
+          <svg aria-hidden="true" focusable="false" width="20" height="16" viewBox="0 0 20 16" fill="none">
+            <path d="M1 2H19M1 8H19M1 14H19" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile navigation -->
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile Navigation">
+      <ul class="nav-list">
+        <li><a href="index.html" class="nav-link nav-link--active" aria-current="page">Home</a></li>
+        <li><a href="story/index.html" class="nav-link">Stories</a></li>
+        <li><a href="about.html" class="nav-link">About & Access</a></li>
+      </ul>
+      <button type="button" class="btn btn--primary btn--subscribe-mobile">SUBSCRIBE</button>
+    </nav>
+  </header>
+
+  <!-- Main content -->
+  <main id="main-content">
+    <!-- Hero section -->
+    <section class="hero-section" aria-labelledby="hero-title">
+      <div class="hero-container">
+        <p class="hero-kicker">LISTEN DEEPLY</p>
+        <h1 id="hero-title" class="hero-title">Stories that make room for every voice.</h1>
+        <p class="hero-subtitle">StoryCast brings human stories to the surface through thoughtful audio and video—made to be heard, seen, and understood.</p>
+        <div class="hero-feature-badge">
+          <svg class="badge-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <circle cx="8" cy="8" r="8" fill="#16a34a"/>
+            <path d="M4.5 8.2L6.8 10.5L11.5 5.5" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>Captions and transcripts on every story</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest stories section -->
+    <section class="stories-section" aria-labelledby="stories-heading">
+      <div class="stories-header">
+        <h2 id="stories-heading" class="stories-title">Latest stories</h2>
+        <div class="stories-divider" role="presentation"></div>
+        <a href="story/index.html" class="view-all-link">View All</a>
+      </div>
+
+      <div class="stories-list">
+        <!-- Story card 1 -->
+        <div class="story-card-wrapper">
+          <article class="story-card">
+            <div class="story-card__media-container">
+              <div class="story-card__placeholder" role="img" aria-label="Image placeholder for The Tide Between Us">
+                <span>Image Placeholder</span>
+                <span class="media-badge">AUDIO</span>
+              </div>
+              <audio controls preload="metadata" class="story-card__media-element" aria-label="Audio player for The Tide Between Us">
+                <source src="assets/audio/sample.mp3" type="audio/mpeg">
+                <track kind="captions" src="assets/captions/tide-between-us.vtt" srclang="en" label="English Captions" default>
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+            <div class="story-card__content">
+              <div>
+                <h3 class="story-card__title">
+                  <a href="story/index.html">The Tide Between Us</a>
+                </h3>
+                <p class="story-card__meta">18 min · Audio + transcript</p>
+              </div>
+              <button type="button" class="btn btn--play" aria-label="Play The Tide Between Us">
+                <svg aria-hidden="true" focusable="false" width="12" height="14" viewBox="0 0 12 14" fill="none">
+                  <path d="M1 1.5L11 7L1 12.5V1.5Z" fill="#1a1a1a"/>
+                </svg>
+                <span>PLAY</span>
+              </button>
+            </div>
+          </article>
+        </div>
+
+        <!-- Story card 2 -->
+        <div class="story-card-wrapper">
+          <article class="story-card">
+            <div class="story-card__media-container">
+              <div class="story-card__placeholder" role="img" aria-label="Image placeholder for Made By Hand">
+                <span>Image Placeholder</span>
+                <span class="media-badge">VIDEO</span>
+              </div>
+              <video controls preload="metadata" class="story-card__media-element" aria-label="Video player for Made By Hand">
+                <source src="assets/video/sample.mp4" type="video/mp4">
+                <track kind="captions" src="assets/captions/made-by-hand.vtt" srclang="en" label="English Captions" default>
+                Your browser does not support the video element.
+              </video>
+            </div>
+            <div class="story-card__content">
+              <div>
+                <h3 class="story-card__title">
+                  <a href="story/index.html">Made By Hand</a>
+                </h3>
+                <p class="story-card__meta">12 min · Video + captions</p>
+              </div>
+              <button type="button" class="btn btn--play" aria-label="Play Made By Hand">
+                <svg aria-hidden="true" focusable="false" width="12" height="14" viewBox="0 0 12 14" fill="none">
+                  <path d="M1 1.5L11 7L1 12.5V1.5Z" fill="#1a1a1a"/>
+                </svg>
+                <span>PLAY</span>
+              </button>
+            </div>
+          </article>
+        </div>
+
+        <!-- Story card 3 -->
+        <div class="story-card-wrapper">
+          <article class="story-card">
+            <div class="story-card__media-container">
+              <div class="story-card__placeholder" role="img" aria-label="Image placeholder for After the Last Train">
+                <span>Image Placeholder</span>
+                <span class="media-badge">AUDIO</span>
+              </div>
+              <audio controls preload="metadata" class="story-card__media-element" aria-label="Audio player for After the Last Train">
+                <source src="assets/audio/sample.mp3" type="audio/mpeg">
+                <track kind="captions" src="assets/captions/after-last-train.vtt" srclang="en" label="English Captions" default>
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+            <div class="story-card__content">
+              <div>
+                <h3 class="story-card__title">
+                  <a href="story/index.html">After the Last Train</a>
+                </h3>
+                <p class="story-card__meta">24 min · Audio + transcript</p>
+              </div>
+              <button type="button" class="btn btn--play" aria-label="Play After the Last Train">
+                <svg aria-hidden="true" focusable="false" width="12" height="14" viewBox="0 0 12 14" fill="none">
+                  <path d="M1 1.5L11 7L1 12.5V1.5Z" fill="#1a1a1a"/>
+                </svg>
+                <span>PLAY</span>
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-main">
+        <a href="index.html" class="brand-logo" aria-label="StoryCast home">
+          <span class="logo-badge" aria-hidden="true">
+            <svg width="12" height="16" viewBox="0 0 10 14" fill="none" focusable="false">
+              <path d="M0 0L10 7L0 14V0Z" fill="#f9d423"/>
+            </svg>
+          </span>
+          <span>StoryCast</span>
+        </a>
+
+        <ul class="footer-nav-list" aria-label="Legal and support links">
+          <li><a href="#" class="footer-link">Privacy Policy</a></li>
+          <li><a href="#" class="footer-link">Terms of Service</a></li>
+          <li><a href="about.html" class="footer-link">Accessibility Statement</a></li>
+          <li><a href="#" class="footer-link">Support</a></li>
+        </ul>
+
+        <div class="footer-socials" aria-label="Social media links">
+          <a href="#" class="social-link" aria-label="StoryCast on X">
+            <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </a>
+          <a href="#" class="social-link" aria-label="StoryCast on Instagram">
+            <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+          </a>
+          <a href="#" class="social-link" aria-label="StoryCast on YouTube">
+            <svg aria-hidden="true" focusable="false" width="20" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">&copy; 2026 STORYCAST MEDIA GROUP. ALL RIGHTS RESERVED.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mobileNav = document.getElementById('mobile-nav');
+
+    if (menuToggle && mobileNav) {
+      menuToggle.addEventListener('click', () => {
+        const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+        menuToggle.setAttribute('aria-expanded', !isExpanded);
+        mobileNav.classList.toggle('is-open');
+      });
+    }
+  </script>
+</body>
+</html>
