@@ -82,7 +82,7 @@ button {
 
 /* Header */
 .site-header {
-  background-color: $color-bg-page;
+  background-color: $color-bg-white;
   border-bottom: 1px solid $color-border-light;
   position: relative;
   width: 100%;
@@ -97,7 +97,7 @@ button {
   padding: $space-xl $space-xl;
 
   @media (min-width: 768px) {
-    padding: $space-xl $space-5xl;
+    padding: 24px 48px;
   }
 }
 
@@ -105,6 +105,10 @@ button {
   align-items: center;
   display: flex;
   gap: $space-2xl;
+
+  @media (min-width: 768px) {
+    gap: 48px;
+  }
 }
 
 .brand-logo {
@@ -122,12 +126,9 @@ button {
 
 .logo-badge {
   align-items: center;
-  background-color: $color-primary;
-  border-radius: $border-radius-sm;
   display: flex;
-  height: 32px;
   justify-content: center;
-  width: 32px;
+  flex-shrink: 0;
 }
 
 .primary-nav {
@@ -141,7 +142,7 @@ button {
 .nav-list {
   align-items: center;
   display: flex;
-  gap: $space-2xl;
+  gap: 32px;
   list-style: none;
 }
 
@@ -149,7 +150,7 @@ button {
   color: $color-secondary;
   font-size: $font-size-md;
   font-weight: $font-weight-medium;
-  padding: $space-2xs 0;
+  padding: 4px 0;
   position: relative;
   transition: color 0.15s ease;
 
@@ -160,6 +161,7 @@ button {
   &--active {
     color: $color-primary;
     border-bottom: 2px solid $color-primary;
+    font-weight: $font-weight-semibold;
   }
 }
 
@@ -181,8 +183,9 @@ button {
   &--primary {
     background-color: $color-accent;
     color: $color-primary;
-    font-size: $font-size-base;
-    padding: $space-sm $space-xl;
+    font-size: 14px;
+    padding: 12px 28px;
+    border-radius: $border-radius-full;
 
     &:hover {
       background-color: $color-accent-hover;
@@ -205,10 +208,7 @@ button {
     height: 48px;
     padding: $space-sm $space-3xl;
     width: 100%;
-
-    @media (min-width: 640px) {
-      width: auto;
-    }
+    border-radius: 6px;
 
     &:hover {
       background-color: $color-accent-hover;
@@ -257,7 +257,7 @@ button {
 }
 
 .mobile-nav {
-  background-color: $color-bg-page;
+  background-color: $color-bg-white;
   border-top: 1px solid $color-border-light;
   display: none;
   padding: $space-lg $space-xl;
@@ -287,38 +287,29 @@ button {
 .hero-section {
   background-color: $color-bg-page;
   border-bottom: 1px solid $color-border-light;
-  padding: $space-4xl $space-xl;
+  padding: 48px $space-xl;
 
   @media (min-width: 768px) {
-    padding: $space-7xl $space-xl;
+    padding: 96px $space-xl;
   }
 }
 
 .hero-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin: 0 auto;
   max-width: $container-max-hero;
-  text-align: left;
-
-  @media (min-width: 768px) {
-    text-align: center;
-    align-items: center;
-  }
+  text-align: center;
 }
 
 .hero-kicker {
   color: $color-secondary;
-  font-size: $font-size-xs;
+  font-size: 14px;
   font-weight: $font-weight-bold;
-  letter-spacing: 0.08em;
-  margin-bottom: $space-sm;
+  letter-spacing: 0.1em;
+  margin-bottom: 24px;
   text-transform: uppercase;
-
-  @media (min-width: 768px) {
-    font-size: $font-size-base;
-    margin-bottom: $space-lg;
-  }
 }
 
 .hero-title {
@@ -326,12 +317,11 @@ button {
   font-size: $font-size-hero-mobile;
   font-weight: $font-weight-black;
   line-height: 1.15;
-  margin-bottom: $space-lg;
+  margin-bottom: 24px;
 
   @media (min-width: 768px) {
     font-size: $font-size-hero-desktop;
-    line-height: 1.1;
-    margin-bottom: $space-xl;
+    line-height: 1.15;
   }
 }
 
@@ -339,10 +329,10 @@ button {
   color: $color-secondary;
   font-size: $font-size-lg;
   line-height: $line-height-normal;
-  margin-bottom: $space-2xl;
+  margin-bottom: 32px;
 
   @media (min-width: 768px) {
-    font-size: $font-size-xl;
+    font-size: 20px;
     line-height: 1.625;
     max-width: 680px;
   }
@@ -361,7 +351,6 @@ button {
   }
 
   .badge-icon {
-    color: $color-success;
     flex-shrink: 0;
   }
 }
@@ -370,10 +359,10 @@ button {
 .stories-section {
   margin: 0 auto;
   max-width: $container-max-desktop;
-  padding: $space-4xl $space-xl $space-6xl;
+  padding: 48px $space-xl 64px;
 
   @media (min-width: 768px) {
-    padding: $space-6xl $space-5xl $space-8xl;
+    padding: 80px 48px 128px;
   }
 }
 
@@ -384,8 +373,8 @@ button {
   margin-bottom: $space-2xl;
 
   @media (min-width: 768px) {
-    gap: $space-xl;
-    margin-bottom: $space-4xl;
+    gap: 32px;
+    margin-bottom: 48px;
   }
 }
 
@@ -396,7 +385,7 @@ button {
   white-space: nowrap;
 
   @media (min-width: 768px) {
-    font-size: $font-size-3xl;
+    font-size: 30.5px;
   }
 }
 
@@ -408,15 +397,12 @@ button {
 
 .view-all-link {
   color: $color-secondary;
-  font-size: $font-size-xs;
+  font-size: 12px;
   font-weight: $font-weight-bold;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   white-space: nowrap;
   transition: color 0.15s ease;
-
-  @media (min-width: 768px) {
-    font-size: $font-size-sm;
-  }
 
   &:hover {
     color: $color-primary;
@@ -426,7 +412,7 @@ button {
 .stories-list {
   display: flex;
   flex-direction: column;
-  gap: $space-2xl;
+  gap: 32px;
 }
 
 /* Story card */
@@ -443,9 +429,9 @@ button {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
   display: flex;
   flex-direction: column;
-  gap: $space-lg;
+  gap: 20px;
   overflow: hidden;
-  padding: $space-xl;
+  padding: 24px;
   transition: box-shadow 0.2s ease;
 
   &:hover {
@@ -456,52 +442,31 @@ button {
 .story-card__media-container {
   display: flex;
   flex-direction: column;
-  gap: $space-sm;
 }
 
 .story-card__placeholder {
   align-items: center;
   background-color: $color-bg-placeholder;
-  border: 1px solid $color-border-light;
-  border-radius: $border-radius-sm;
+  border-radius: 6px;
   color: $color-secondary;
   display: flex;
-  font-size: $font-size-sm;
-  font-weight: $font-weight-medium;
-  height: 224px;
-  justify-content: center;
-  position: relative;
-  width: 100%;
-}
-
-.media-badge {
-  background-color: $color-bg-badge;
-  border: 1px solid $color-border-light;
-  border-radius: $border-radius-sm;
-  color: $color-badge-text;
-  font-size: $font-size-xs;
+  font-size: 12px;
   font-weight: $font-weight-bold;
   letter-spacing: 0.05em;
-  padding: 4px 10px;
-  position: absolute;
-  right: $space-sm;
-  top: $space-sm;
-}
-
-.story-card__media-element {
-  border-radius: $border-radius-sm;
+  height: 224px;
+  justify-content: center;
   width: 100%;
 }
 
 .story-card__content {
   display: flex;
   flex-direction: column;
-  gap: $space-sm;
+  gap: 16px;
 }
 
 .story-card__title {
   color: $color-primary;
-  font-size: $font-size-2xl;
+  font-size: 24px;
   font-weight: $font-weight-bold;
   line-height: $line-height-tight;
 
@@ -516,8 +481,8 @@ button {
 
 .story-card__meta {
   color: $color-secondary;
-  font-size: $font-size-base;
-  margin-bottom: $space-sm;
+  font-size: 16px;
+  margin-top: 8px;
 }
 
 /* Container Query */
@@ -525,8 +490,8 @@ button {
   .story-card {
     flex-direction: row;
     align-items: center;
-    gap: $space-2xl;
-    padding: $space-xl;
+    gap: 32px;
+    padding: 24px;
   }
 
   .story-card__media-container {
@@ -545,18 +510,16 @@ button {
   }
 
   .story-card__title {
-    font-size: $font-size-3xl;
+    font-size: 30px;
   }
 
   .story-card__meta {
-    font-size: $font-size-lg;
-    margin-bottom: $space-md;
+    font-size: 18px;
+    margin-top: 8px;
   }
 
   .btn--play {
-    align-self: flex-start;
-    width: auto;
-    min-width: 140px;
+    width: 100%;
   }
 }
 
@@ -1061,20 +1024,14 @@ button {
 /* Footer */
 .site-footer {
   background-color: $color-bg-white;
-  border-top: 1px solid $color-border-light;
-  padding: $space-4xl $space-xl;
-
-  @media (min-width: 768px) {
-    padding: $space-5xl $space-5xl;
-  }
+  padding: 64px 48px 48px;
 }
 
 .footer-container {
   display: flex;
   flex-direction: column;
-  gap: $space-2xl;
   margin: 0 auto;
-  max-width: $container-max-desktop;
+  max-width: 1152px;
 }
 
 .footer-main {
@@ -1099,13 +1056,13 @@ button {
 
   @media (min-width: 768px) {
     flex-direction: row;
-    gap: $space-2xl;
+    gap: 32px;
   }
 }
 
 .footer-link {
   color: $color-secondary;
-  font-size: $font-size-base;
+  font-size: 14px;
   font-weight: $font-weight-medium;
   transition: color 0.15s ease;
 
@@ -1117,25 +1074,17 @@ button {
 .footer-socials {
   align-items: center;
   display: flex;
-  gap: $space-lg;
+  gap: 24px;
 }
 
 .social-link {
   align-items: center;
-  background-color: $color-social-bg;
-  border-radius: $border-radius-sm;
   color: $color-secondary;
   display: flex;
-  height: 40px;
+  height: 24px;
   justify-content: center;
-  transition: color 0.15s ease, background-color 0.15s ease;
-  width: 40px;
-
-  @media (min-width: 768px) {
-    background-color: transparent;
-    height: 24px;
-    width: 24px;
-  }
+  transition: color 0.15s ease;
+  width: 24px;
 
   &:hover {
     color: $color-primary;
@@ -1143,18 +1092,13 @@ button {
 }
 
 .footer-bottom {
-  border-top: 1px solid $color-border-card;
-  padding-top: $space-xl;
+  margin-top: 32px;
   text-align: center;
-
-  @media (min-width: 768px) {
-    border-top: 1px solid $color-border-light;
-  }
 }
 
 .copyright-text {
   color: $color-secondary;
-  font-size: $font-size-xs;
+  font-size: 12px;
   font-weight: $font-weight-bold;
   letter-spacing: 0.05em;
   text-transform: uppercase;
