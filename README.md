@@ -1,4 +1,5 @@
-# StoryCast — Accessible Media Feature Microsite
+# StoryCast
+# Accessible Media Feature Microsite
 
 StoryCast is a clean, accessible, 3-page web microsite built to showcase audio and video storytelling. The goal of this project is to make media content welcoming, easy to navigate, and fully accessible to everyone, including people using assistive technologies like screen readers or keyboard-only navigation.
 
@@ -10,7 +11,6 @@ This project was built from scratch using pure **Vanilla HTML5**, **Sass (SCSS)*
 
 - **Figma Wireframes:** [StoryCast Wireframe](https://www.figma.com/design/jLhBC2z1o4UHmIzVNU9QyM/Story-Cast-Wireframe?m=auto&t=xumZIxgPNdn8F18n-1)
 - **Figma High-Fidelity Prototype:** [StoryCast Prototype](https://www.figma.com/design/FAiYkp5KRzOjN3LxzpStDP/Story-Cast-Protype?m=auto&t=xumZIxgPNdn8F18n-6)
-- **Repository:** [GitHub: storycast](https://github.com/charleswereangoye/storycast)
 
 ---
 
